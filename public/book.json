@@ -1,9 +1,9 @@
 [
     {
-        "bookId": "9781982114426",
+        "bookId": "1",
         "bookName": "The Silent Patient",
         "author": "Alex Michaelides",
-        "image": "https://example.com/the_silent_patient.jpg",
+        "image": "https://i.ibb.co/pw7r3zt/top-view-mustard-copybook-around-white-flowers-dark.jpg",
         "review": "A gripping psychological thriller that keeps you guessing until the very end.",
         "totalPages": 336,
         "rating": 4.5,
@@ -13,10 +13,10 @@
         "yearOfPublishing": 2019
     },
     {
-        "bookId": "9781594634734",
+        "bookId": "2",
         "bookName": "Educated: A Memoir",
         "author": "Tara Westover",
-        "image": "https://example.com/educated_a_memoir.jpg",
+        "image": "https://i.ibb.co/VHV72VX/flowery-book-separator.jpg",
         "review": "A powerful memoir of resilience and self-discovery.",
         "totalPages": 352,
         "rating": 4.7,
@@ -26,10 +26,10 @@
         "yearOfPublishing": 2018
     },
     {
-        "bookId": "9781501173219",
+        "bookId": "3",
         "bookName": "Little Fires Everywhere",
         "author": "Celeste Ng",
-        "image": "https://example.com/little_fires_everywhere.jpg",
+        "image": "https://i.ibb.co/jrggWsG/top-view-yellow-green-copybooks-along-with-white-flowers-dark-background.jpg",
         "review": "A thought-provoking exploration of family dynamics and societal norms.",
         "totalPages": 352,
         "rating": 4.2,
@@ -39,10 +39,10 @@
         "yearOfPublishing": 2017
     },
     {
-        "bookId": "9781476746586",
+        "bookId": "4",
         "bookName": "Big Little Lies",
         "author": "Liane Moriarty",
-        "image": "https://example.com/big_little_lies.jpg",
+        "image": "https://i.ibb.co/qj7HZKb/blue-book-cover.jpg",
         "review": "An addictive page-turner with richly developed characters and unexpected twists.",
         "totalPages": 460,
         "rating": 4.6,
@@ -52,10 +52,10 @@
         "yearOfPublishing": 2014
     },
     {
-        "bookId": "9780062315007",
+        "bookId": "5",
         "bookName": "The Girl on the Train",
         "author": "Paula Hawkins",
-        "image": "https://example.com/the_girl_on_the_train.jpg",
+        "image": "https://i.ibb.co/GPVpL7r/black-yellow-hardback-book.jpg",
         "review": "A gripping thriller with complex characters and a twisty plot.",
         "totalPages": 336,
         "rating": 4.0,
@@ -65,10 +65,10 @@
         "yearOfPublishing": 2015
     },
     {
-        "bookId": "9780385537858",
+        "bookId": "6",
         "bookName": "The Night Circus",
         "author": "Erin Morgenstern",
-        "image": "https://example.com/the_night_circus.jpg",
+        "image": "https://i.ibb.co/hs0NPBX/english-books-assortment-with-blue-background.jpg",
         "review": "A beautifully written, enchanting tale that transports you to a magical world.",
         "totalPages": 400,
         "rating": 4.4,

@@ -9,6 +9,11 @@ import './index.css'
 import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
 import Error from './Components/Error/Error';
+import ListedBook from './Components/ListedBook/ListedBook';
+import Pages from './Components/Pages/Pages';
+import MoreBooks from './Components/MoreBooks/MoreBooks';
+import Search from './Components/Search/Search';
+import Books from './Components/Books/Books';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +25,25 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home></Home>,
       },
+      {
+        path:'/listed',
+        element:<ListedBook></ListedBook>
+      },
+      {
+        path:'/pages',
+        element:<Pages></Pages>
+      },
+      {
+        path:'/more',
+        element:<MoreBooks></MoreBooks>
+      },
+      {
+        path:'/search',
+        element:<Search></Search>
+      },
+      {
+       
+      }
     ]
   },
 ]);
