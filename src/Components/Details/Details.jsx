@@ -15,8 +15,7 @@ const Details = () => {
 
     const notify = () =>{
         saveLocalStorage(single)
-        
-        
+        toast('Thank you for reading')
     } 
     
   
