@@ -14,6 +14,7 @@ import Pages from './Components/Pages/Pages';
 import MoreBooks from './Components/MoreBooks/MoreBooks';
 import Search from './Components/Search/Search';
 import Books from './Components/Books/Books';
+import Details from './Components/Details/Details';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,9 @@ const router = createBrowserRouter([
         element:<Search></Search>
       },
       {
-       
+       path:'/detail/:detailId',
+       element:<Details></Details>,
+       loader:() => fetch('book.json')
       }
     ]
   },
