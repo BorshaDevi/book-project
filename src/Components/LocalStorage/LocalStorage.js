@@ -41,4 +41,35 @@ const saveLocalStorage=(single) =>{
 
 
 
-export{saveLocalStorage}
+
+
+
+
+
+
+
+
+const handleLocal=()=>{
+    const getObject=localStorage.getItem('book') 
+    if(getObject){
+       return JSON.parse(getObject)
+    }
+    return []
+         
+ }
+ const handleLocalStorage=(single) =>{
+     const saveObjects=handleLocal()
+     const exjest = saveObjects.find(saveObject => saveObject.bookId == single.bookId)
+     if(exjest){
+         toast('Book are all ready read')
+     }
+     else{
+         saveObjects.push(single)
+         const saveJson=JSON.stringify(saveObjects)
+         localStorage.setItem('book',saveJson)
+     }
+ }
+
+
+
+export{saveLocalStorage ,handleLocalStorage}
