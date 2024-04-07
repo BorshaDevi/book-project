@@ -13,11 +13,13 @@ const ListedBook = () => {
           setGetDatas(getItem)
   },[])
   const [getWishs,setWishes] =useState([])
-   console.log(getWishs)
+   
   useEffect(() =>{
           const getSet=JSON.parse(localStorage.getItem('book')) || [];
           setWishes(getSet)
   },[])
+
+
     return (
       <>
       <div className="text-center mt-5 bg-slate-300 p-5 rounded">
@@ -26,7 +28,7 @@ const ListedBook = () => {
       <div className="text-center mt-5">
       <select className="select select-info w-full max-w-xs bg-green-600 text-white">
   <option disabled selected>Sort by</option>
-  <option>Rating</option>
+  <option >Rating</option>
   <option>Number of Pages</option>
   <option>Publisher year</option>
 </select>
