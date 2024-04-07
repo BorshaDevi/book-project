@@ -3,6 +3,7 @@ import AllBook from "../AllBook/AllBook";
 import WishData from "../WishData/WishData";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { Helmet } from "react-helmet-async";
 
 
 const ListedBook = () => {
@@ -22,6 +23,9 @@ const ListedBook = () => {
 
     return (
       <>
+    <Helmet>
+      <title>BookList/ListedBook</title>
+    </Helmet>
       <div className="text-center mt-5 bg-slate-300 p-5 rounded">
         <h1 className="font-bold">Book</h1>
       </div>

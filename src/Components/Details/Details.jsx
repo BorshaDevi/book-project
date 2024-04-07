@@ -2,6 +2,7 @@ import {useLoaderData,useParams} from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { handleLocalStorage, saveLocalStorage } from "../LocalStorage/LocalStorage";
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -10,7 +11,7 @@ const Details = () => {
     const details=useLoaderData()
     const {detailId} =useParams()
     const single=details.find(detail => detail.bookId=== detailId)
-    const {image,bookName,author,review,category,tags,publisher,yearOfPublishing,totalPages,rating} =single
+    const {image,bookName,author,review,category,tags,publisher,yearOfPublishing,totalPages,rating,bookId} =single
 
 
     const notify = () =>{
@@ -26,6 +27,9 @@ const Details = () => {
   
     return (
         <div>
+          <Helmet>
+            <title>BookList:{bookId}</title>
+          </Helmet>
            <div className="hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row">
     <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
