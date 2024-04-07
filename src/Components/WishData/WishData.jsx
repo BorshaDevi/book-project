@@ -5,7 +5,6 @@ import { MdContactPage } from "react-icons/md";
 const WishData = ({getwish}) => {
     const {image,bookName,author,rating,category,tags,publisher,yearOfPublishing,totalPages} =getwish
     return (
-        <div>
             <div className="hero  bg-base-200">
   <div className="hero-content flex-col lg:flex-row " >
     <img src={image} className="max-w-sm rounded-lg shadow-2xl" />
@@ -44,7 +43,7 @@ const WishData = ({getwish}) => {
     </div>
   </div>
 </div>
-        </div>
+       
     );
 };
 

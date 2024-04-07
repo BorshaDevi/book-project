@@ -19,38 +19,42 @@ const ListedBook = () => {
           setWishes(getSet)
   },[])
     return (
-        <div>
-            <Tabs>
+      <>
+      <div className="text-center mt-5 bg-slate-300 p-5 rounded">
+        <h1 className="font-bold">Book</h1>
+      </div>
+      <div className="text-center mt-5">
+      <select className="select select-info w-full max-w-xs bg-green-600 text-white">
+  <option disabled selected>Sort by</option>
+  <option>Rating</option>
+  <option>Number of Pages</option>
+  <option>Publisher year</option>
+</select>
+</div>
+     
+<div>
+     <Tabs>       
     <TabList>
       <Tab>Read</Tab>
       <Tab>WishList</Tab>
     </TabList>
-         <div className="">
          <TabPanel>
-      <div>
-        
-      </div>
            <div className="grid grid-cols-1 gap-5">
-
            {
                 getDatas.map(getData => <AllBook key={getData.bookId} allbook={getData}></AllBook> )
             }
            </div>
-    </TabPanel>
-    <TabPanel>
+     </TabPanel>
+      <TabPanel>
            <div className="grid grid-cols-1 gap-5">
                {
                 getWishs.map(getWish => <WishData key={getWish.bookId} getwish={getWish}></WishData> )
                }
-           </div>
-     
-    </TabPanel>
-
-         </div>
-    
-  </Tabs>
-        </div>
+           </div> 
+      </TabPanel>
+       </Tabs>
+       </div>
+       </>
     );
 };
-
 export default ListedBook;

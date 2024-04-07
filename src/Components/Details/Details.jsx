@@ -19,6 +19,8 @@ const Details = () => {
     } 
     const handleWish=()=>{
       handleLocalStorage(single)
+      toast('Thank you for your wishes')
+
     }
     
   
